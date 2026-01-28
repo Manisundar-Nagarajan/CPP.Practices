@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+//getting a single word string
+/*int main()
+{
+        int num;
+        string name;
+        cin>>num;
+        cin>>name;
+        cout<<"num="<<num<<endl;
+        cout<<"name="<<name<<endl;
+
+}*/
+
+//Getting a string input including space between two words
+/*int main()
+{
+        int num;
+        string name;
+        cin>>num;
+        cin.ignore();
+        getline(cin,name);
+        cout<<"num="<<num<<endl;
+        cout<<"name="<<name<<endl;
+
+}*/
+
+//Add to string using + operator
+/*int main()
+{
+        string s1="hello", s2="world", s;
+        s=s1+s2;
+        cout<<"s="<<s<<endl;
+}*/
+
+//Swap the 2 strings
+/*int main()
+{
+        string s1="hello", s2="world";
+        s1.swap(s2);
+        cout<<s1<<s2<<endl;
+}*/
+
+//Appends 2 strings
+int main()
+{
+        string s1="hello", s2="world";
+        s1.append(s2);
+        cout<<s1<<endl;
+}
+
