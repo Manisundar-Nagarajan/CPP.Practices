@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+/*int main()
+{
+        int x=10;
+        int y=20;
+        cout<<"x and y before swaping:"<<x<<" "<<y<<endl;
+        swap(x,y);
+        cout<<"x and y after swaping:"<<x<<" "<<y<<endl;
+}
+void swap(int &p,int&q)
+        {
+                int temp=p;
+                p=q;
+                q=temp;
+        }*/
+
+/*int main()
+{
+        int x=15;
+        int *p=&x;
+        int *&rp=p;
+        cout<<"p="<<p<<endl;
+        cout<<"rp="<<rp<<endl;
+        cout<<"&p="<<&p<<endl;
+        cout<<"&rp="<<&rp<<endl;
+        cout<<"*rp="<<*rp<<endl;
+}*/
+
+int main()
+{
+        int a[5]={10,20,30,40,50};
+        int (&ra)[5]=a;
+        for(int i=0;i<5;i++)
+        {
+                cout<<"ra["<<i<<"]= "<<ra[i]<<endl;
+        }
+}
