@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+namespace A
+{
+        int x=10;
+        int y=20;
+
+}
+namespace B
+{
+        int x=30;
+        int y=40;
+}
+
+/*int main()
+{
+        cout<<"x="<<A::x<<endl;
+        cout<<"y="<<A::y<<endl;
+        cout<<"x="<<B::x<<endl;
+        cout<<"y="<<B::y<<endl;
+}*/
+
+
+/*int main()
+{
+        {
+        using namespace A;
+                cout<<"x="<<x<<endl;
+                cout<<"y="<<y<<endl;
+        }
+        {
+                using namespace B;
+                cout<<"x="<<x<<endl;
+                cout<<"y="<<y<<endl;
+        }
+}*/
+
+int main()
+{
+        using A::x;
+        using B::y;
+        cout<<"x="<<x<<endl;
+        cout<<"y="<<y<<endl;
+}
